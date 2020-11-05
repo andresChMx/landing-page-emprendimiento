@@ -51,6 +51,7 @@
         display:none !important;
     }
 }
+
 .how-it-work-inner [class*="step"] img{
 
 }
@@ -160,4 +161,23 @@
 }
 .pricing-three-col .pricing-col-rep{
     margin:20px;
+}
+@media screen and (max-width: 450px) {
+    .hero-content .subscription-form input{
+        width:95%;
+        display:inline-block;
+        margin:auto;
+    }
+    .hero-content .subscription-form{
+        display:inline-block;
+        width:100%;
+    }
+    .hero-content .subscription-form  button{
+        display:inline-block;
+        margin:20px auto 0 auto;
+        width: 95%;
+    }
+    .how-it-work-inner .step0 {
+        width:65%;
+    }
 }
