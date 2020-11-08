@@ -43,6 +43,9 @@
     div.accordion-title h2{
         text-align: center;
     }
+    .how-it-work-inner [class*="step"]{
+        margin-bottom:20px !important;
+    }
     .how-it-work-inner [class*="step"] .image{
         width:50% !important;
     }
@@ -212,8 +215,16 @@
 }
 
 @media screen and (max-width: 450px) {
+    .fav-meal-outer h2,h4{
+        max-width:400px !important;
+    }
+    .fav-meal-main{
+        padding-left:20px !important;
+        padding-right:20px !important;
+    }
     .hero-content__subscription{
         width:90%;
-        margin:auto;
+        margin:20px auto 0 auto;
     }
+
 }
