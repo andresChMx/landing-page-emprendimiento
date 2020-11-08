@@ -16,6 +16,9 @@
     <meta name="twitter:description" content="Factor_ | Healthy, Fully-Prepared Meals Delivered to Your Door">
     <meta name="twitter:title" content="Factor_ | Healthy, Fully-Prepared Meals Delivered to Your Door">
 
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-firestore.js"></script>
+
 
     <script
             src="https://code.jquery.com/jquery-3.5.1.min.js"
@@ -1297,13 +1300,13 @@
                             </div>
                             <div class="hero-content__subscription">
                                 <p class="subscription-label">
-                                    Nuestro sitio sera lanzado pronto!. Suscribete para estar al tanto.
+                                    Nuestro sitio será lanzado pronto! Suscríbete para estar al tanto
                                 </p>
-                                <div class="subscription-form">
-                                    <input type="text" placeholder="Ingrese su nombre"/>
-                                    <input type="email" placeholder="alguien@correo.com"/>
+                                <form class="subscription-form">
+                                    <input type="text" name="nombre" placeholder="Nombre"/>
+                                    <input type="email" name="email" placeholder="Email" required/>
                                     <input type="submit" value="Suscribirse" class="btn-submit"/>
-                                </div>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -1336,7 +1339,7 @@
                                 </div>
                                 <div class="how-it-work-inner">
                                     <p class="parrafo">
-                                        Hemos preparado deliciosas y sabrosas comidas con ingredientes de alta calidad, conservando todos los sabores y nutrientes. Puede disfrutarlo en cualquier lugar: en la carretera, en su escritorio o antes de una prueba. Simplemente agregue agua y disfrute.
+                                        Hemos preparado deliciosas y sabrosas comidas con ingredientes de alta calidad, conservando todos los sabores y nutrientes. Puede disfrutarlo en cualquier lugar: en el camino, en su escritorio o antes de una prueba. Simplemente agregue agua y disfrute.
                                     </p>
                                     <link rel="stylesheet" href="./Factor_%20_%20Comidas%20saludables%20y%20completamente%20preparadas%20entregadas%20en%20su%20puerta_files/custom/customStyles.css">
                                     <link rel="stylesheet" href="./Factor_%20_%20Comidas%20saludables%20y%20completamente%20preparadas%20entregadas%20en%20su%20puerta_files/custom/animations.css">
@@ -1348,7 +1351,7 @@
                                             </div>
                                             <div class="step-label">
                                                 <p class="big">Elige tus comidas</p>
-                                                <p class="small">Mas de 5 menus de platos saludables semanales</p>
+                                                <p class="small">Más de 5 menús de platos saludables semanales</p>
                                             </div>
                                         </div>
 
@@ -1358,7 +1361,7 @@
                                             </div>
                                             <div class="step-label">
                                                 <p class="big">Lo cocinamos y enviamos</p>
-                                                <p class="small">Prepadado por chefs y enviado fresco</p>
+                                                <p class="small">Preparado por chefs y enviado fresco</p>
                                             </div>
                                         </div>
                                         <div class="step2">
@@ -1366,7 +1369,7 @@
                                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 280" width="280" height="280" preserveAspectRatio="xMidYMid meet" style="width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px);"><defs><clipPath id="__lottie_element_271"><rect width="280" height="280" x="0" y="0"></rect></clipPath><clipPath id="__lottie_element_285"><path d="M0,0 L39,0 L39,10 L0,10z"></path></clipPath><clipPath id="__lottie_element_298"><path d="M0,0 L46,0 L46,20 L0,20z"></path></clipPath><clipPath id="__lottie_element_314"><path d="M0,0 L39,0 L39,10 L0,10z"></path></clipPath></defs><g clip-path="url(#__lottie_element_271)"><g transform="matrix(2,0,0,2,0,0)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,70,115)"><path fill="rgb(96,216,179)" fill-opacity="1" d=" M-38,-1 C-38,-1 38,-1 38,-1 C38.553001403808594,-1 39,-0.5529999732971191 39,0 C39,0.5529999732971191 38.553001403808594,1 38,1 C38,1 -38,1 -38,1 C-38.551998138427734,1 -39,0.5529999732971191 -39,0 C-39,-0.5529999732971191 -38.551998138427734,-1 -38,-1z"></path></g></g><g transform="matrix(2,0,0,2,0,0)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,70,100)"><path fill="rgb(255,255,255)" fill-opacity="1" d=" M-44,-3 C-44,-3 44,-3 44,-3 C45.65700149536133,-3 47,-1.656999945640564 47,0 C47,1.656999945640564 45.65700149536133,3 44,3 C44,3 -44,3 -44,3 C-45.65700149536133,3 -47,1.656999945640564 -47,0 C-47,-1.656999945640564 -45.65700149536133,-3 -44,-3z"></path><path stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="4" stroke="rgb(3,81,78)" stroke-opacity="1" stroke-width="2" d=" M-44,-3 C-44,-3 44,-3 44,-3 C45.65700149536133,-3 47,-1.656999945640564 47,0 C47,1.656999945640564 45.65700149536133,3 44,3 C44,3 -44,3 -44,3 C-45.65700149536133,3 -47,1.656999945640564 -47,0 C-47,-1.656999945640564 -45.65700149536133,-3 -44,-3z"></path></g></g><g transform="matrix(2,0,0,2,0,0)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,70,108)"><path fill="rgb(255,255,255)" fill-opacity="1" d=" M-38.13199996948242,-5 C-38.13199996948242,-5 -35.91899871826172,-1.6799999475479126 -35.91899871826172,-1.6799999475479126 C-33.13600158691406,2.493000030517578 -28.452999114990234,5 -23.437999725341797,5 C-23.437999725341797,5 23.437999725341797,5 23.437999725341797,5 C28.45199966430664,5 33.13600158691406,2.493000030517578 35.917999267578125,-1.6799999475479126 C35.917999267578125,-1.6799999475479126 38.13199996948242,-5 38.13199996948242,-5 C38.13199996948242,-5 -38.13199996948242,-5 -38.13199996948242,-5z"></path><path stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="4" stroke="rgb(3,81,78)" stroke-opacity="1" stroke-width="2" d=" M-38.13199996948242,-5 C-38.13199996948242,-5 -35.91899871826172,-1.6799999475479126 -35.91899871826172,-1.6799999475479126 C-33.13600158691406,2.493000030517578 -28.452999114990234,5 -23.437999725341797,5 C-23.437999725341797,5 23.437999725341797,5 23.437999725341797,5 C28.45199966430664,5 33.13600158691406,2.493000030517578 35.917999267578125,-1.6799999475479126 C35.917999267578125,-1.6799999475479126 38.13199996948242,-5 38.13199996948242,-5 C38.13199996948242,-5 -38.13199996948242,-5 -38.13199996948242,-5z"></path></g></g><g transform="matrix(2,0,0,2,0,0)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,126,70)"><path stroke-linecap="round" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="4" stroke="rgb(96,216,179)" stroke-opacity="1" stroke-width="2" d=" M6,44 C6,44 -3.1050000190734863,36.45100021362305 -3.1050000190734863,36.45100021362305 C-4.939000129699707,34.93199920654297 -6,32.67399978637695 -6,30.292999267578125 C-6,30.292999267578125 -6,-30.29199981689453 -6,-30.29199981689453 C-6,-32.67399978637695 -4.939000129699707,-34.93199920654297 -3.1050000190734863,-36.45199966430664 C-3.1050000190734863,-36.45199966430664 6,-44 6,-44"></path></g></g><g transform="matrix(2,0,0,2,0,0)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,70.5,19.5)"><path stroke-linecap="round" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="4" stroke="rgb(96,216,179)" stroke-opacity="1" stroke-width="2" d=" M-49.5,-6.5 C-49.5,-6.5 -40.702999114990234,3.7190001010894775 -40.702999114990234,3.7190001010894775 C-39.18299865722656,5.485000133514404 -36.96900177001953,6.5 -34.63999938964844,6.5 C-34.63999938964844,6.5 34.63999938964844,6.5 34.63999938964844,6.5 C36.96900177001953,6.5 39.18299865722656,5.485000133514404 40.70199966430664,3.7190001010894775 C40.70199966430664,3.7190001010894775 49.5,-6.5 49.5,-6.5"></path></g></g><g transform="matrix(2,0,0,2,0,0)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,14,70)"><path stroke-linecap="round" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="4" stroke="rgb(96,216,179)" stroke-opacity="1" stroke-width="2" d=" M-6,44 C-6,44 3.1050000190734863,36.45100021362305 3.1050000190734863,36.45100021362305 C4.939000129699707,34.93199920654297 6,32.67399978637695 6,30.292999267578125 C6,30.292999267578125 6,-30.29199981689453 6,-30.29199981689453 C6,-32.67399978637695 4.939000129699707,-34.93199920654297 3.1050000190734863,-36.45199966430664 C3.1050000190734863,-36.45199966430664 -6,-44 -6,-44"></path></g></g><g clip-path="url(#__lottie_element_314)" transform="matrix(2,0,0,2,58.844337463378906,172)" opacity="1" style="display: none;"><g transform="matrix(1,0,0,1,0,0)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,19.5,6)"><path fill="rgb(255,255,255)" fill-opacity="1" d=" M-17.5,4 C-17.5,4 -17.5,2 -17.5,2 C-17.5,2 -17.5,-1 -17.5,-1 C-17.5,-2.6540000438690186 -16.15399932861328,-4 -14.5,-4 C-14.5,-4 14.5,-4 14.5,-4 C16.15399932861328,-4 17.5,-2.6540000438690186 17.5,-1 C17.5,-1 17.5,2 17.5,2 C17.5,2 17.5,4 17.5,4 C17.5,4 -17.5,4 -17.5,4z"></path></g></g><g transform="matrix(1,0,0,1,0,0)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="4" stroke="rgb(96,216,179)" stroke-opacity="1" stroke-width="2" d=" M6,6.5 C6,6.5 33,6.5 33,6.5"></path></g></g><g transform="matrix(1,0,0,1,0,0)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,19.5,5)"><path fill="rgb(3,81,78)" fill-opacity="1" d=" M14.5,-5 C14.5,-5 -14.5,-5 -14.5,-5 C-17.256999969482422,-5 -19.5,-2.756999969482422 -19.5,0 C-19.5,0 -19.5,5 -19.5,5 C-19.5,5 -17.5,5 -17.5,5 C-17.5,5 -17.5,3 -17.5,3 C-17.5,3 -17.5,0 -17.5,0 C-17.5,-1.6540000438690186 -16.15399932861328,-3 -14.5,-3 C-14.5,-3 14.5,-3 14.5,-3 C16.15399932861328,-3 17.5,-1.6540000438690186 17.5,0 C17.5,0 17.5,3 17.5,3 C17.5,3 17.5,5 17.5,5 C17.5,5 19.5,5 19.5,5 C19.5,5 19.5,0 19.5,0 C19.5,-2.756999969482422 17.256999969482422,-5 14.5,-5z"></path></g></g></g><g clip-path="url(#__lottie_element_298)" transform="matrix(1.9166271686553955,0,0,2,87.19171142578125,152)" opacity="1" style="display: block;"><g transform="matrix(1,0,0,1,0,0)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,23,10.5)"><path fill="rgb(96,216,179)" fill-opacity="1" d=" M21.790000915527344,9.5 C20.325000762939453,-1.2300000190734863 11.131999969482422,-9.5 0,-9.5 C-11.131999969482422,-9.5 -20.326000213623047,-1.2300000190734863 -21.790000915527344,9.5 C-21.790000915527344,9.5 21.790000915527344,9.5 21.790000915527344,9.5z"></path></g></g><g transform="matrix(1,0,0,1,0,0)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,23,10)"><path fill="rgb(3,81,78)" fill-opacity="1" d=" M-20.763999938964844,10 C-19.30699920654297,-0.2409999966621399 -10.565999984741211,-8 0.0010000000474974513,-8 C10.567000389099121,-8 19.30699920654297,-0.2409999966621399 20.763999938964844,10 C20.763999938964844,10 22.79400062561035,10 22.79400062561035,10 C21.322999954223633,-1.3600000143051147 11.67300033569336,-10 0.0010000000474974513,-10 C-11.670000076293945,-10 -21.322999954223633,-1.3600000143051147 -22.79400062561035,10 C-22.79400062561035,10 -20.763999938964844,10 -20.763999938964844,10z"></path></g></g><g transform="matrix(1,0,0,1,0,0)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,23,13)"><path fill="rgb(255,255,255)" fill-opacity="1" d=" M-14.687999725341797,7 C-13.289999961853027,0.12800000607967377 -7.204999923706055,-5 -0.0010000000474974513,-5 C7.202000141143799,-5 13.288999557495117,0.12800000607967377 14.687999725341797,7 C14.687999725341797,7 16.725000381469727,7 16.725000381469727,7 C15.29800033569336,-0.9890000224113464 8.302000045776367,-7 -0.0010000000474974513,-7 C-8.303999900817871,-7 -15.298999786376953,-0.9890000224113464 -16.725000381469727,7 C-16.725000381469727,7 -14.687999725341797,7 -14.687999725341797,7z"></path></g></g><g transform="matrix(1,0,0,1,0,0)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,23,16.5)"><path fill="rgb(255,255,255)" fill-opacity="1" d=" M-7.414999961853027,3.5 C-6.223999977111816,0.5429999828338623 -3.3369998931884766,-1.5 0,-1.5 C3.3369998931884766,-1.5 6.2230000495910645,0.5429999828338623 7.414000034332275,3.5 C7.414000034332275,3.5 9.541999816894531,3.5 9.541999816894531,3.5 C8.26200008392334,-0.5979999899864197 4.447999954223633,-3.5 0,-3.5 C-4.447999954223633,-3.5 -8.26200008392334,-0.5979999899864197 -9.541999816894531,3.5 C-9.541999816894531,3.5 -7.414999961853027,3.5 -7.414999961853027,3.5z"></path></g></g></g><g clip-path="url(#__lottie_element_285)" style="display: block;" transform="matrix(2,0,0,2,113.3087158203125,172)" opacity="1"><g style="display: block;" transform="matrix(1,0,0,1,0,0)" opacity="1"><g opacity="1" transform="matrix(1,0,0,1,19.5,6)"><path fill="rgb(255,255,255)" fill-opacity="1" d=" M-17.5,4 C-17.5,4 -17.5,2 -17.5,2 C-17.5,2 -17.5,-1 -17.5,-1 C-17.5,-2.6540000438690186 -16.15399932861328,-4 -14.5,-4 C-14.5,-4 14.5,-4 14.5,-4 C16.15399932861328,-4 17.5,-2.6540000438690186 17.5,-1 C17.5,-1 17.5,2 17.5,2 C17.5,2 17.5,4 17.5,4 C17.5,4 -17.5,4 -17.5,4z"></path></g></g><g style="display: block;" transform="matrix(1,0,0,1,0,0)" opacity="1"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="4" stroke="rgb(96,216,179)" stroke-opacity="1" stroke-width="2" d=" M6,6.5 C6,6.5 33,6.5 33,6.5"></path></g></g><g style="display: block;" transform="matrix(1,0,0,1,0,0)" opacity="1"><g opacity="1" transform="matrix(1,0,0,1,19.5,5)"><path fill="rgb(3,81,78)" fill-opacity="1" d=" M14.5,-5 C14.5,-5 -14.5,-5 -14.5,-5 C-17.256999969482422,-5 -19.5,-2.756999969482422 -19.5,0 C-19.5,0 -19.5,5 -19.5,5 C-19.5,5 -17.5,5 -17.5,5 C-17.5,5 -17.5,3 -17.5,3 C-17.5,3 -17.5,0 -17.5,0 C-17.5,-1.6540000438690186 -16.15399932861328,-3 -14.5,-3 C-14.5,-3 14.5,-3 14.5,-3 C16.15399932861328,-3 17.5,-1.6540000438690186 17.5,0 C17.5,0 17.5,3 17.5,3 C17.5,3 17.5,5 17.5,5 C17.5,5 19.5,5 19.5,5 C19.5,5 19.5,0 19.5,0 C19.5,-2.756999969482422 17.256999969482422,-5 14.5,-5z"></path></g></g></g><g transform="matrix(2,0,0,2,160,111.75)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="4" stroke="rgb(96,216,179)" stroke-opacity="1" stroke-width="2" d=" M0.4976379871368408,-16 C1.824629545211792,-14.666999816894531 2.488189935684204,-12 2.488189935684204,-8 C2.488189935684204,-2 -2.488189935684204,2.6670000553131104 -2.488189935684204,8 C-2.488189935684204,11.555999755859375 -1.4929139614105225,14.222000122070312 0.4976379871368408,16"></path></g></g><g transform="matrix(2,0,0,2,142.75,110.32099914550781)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="4" stroke="rgb(96,216,179)" stroke-opacity="1" stroke-width="2" d=" M0.4976379871368408,-16 C1.824629545211792,-14.666999816894531 2.488189935684204,-12 2.488189935684204,-8 C2.488189935684204,-2 -2.488189935684204,2.6670000553131104 -2.488189935684204,8 C-2.488189935684204,11.555999755859375 -1.4929139614105225,14.222000122070312 0.4976379871368408,16"></path></g></g><g transform="matrix(2,0,0,2,126.75,111.75)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="4" stroke="rgb(96,216,179)" stroke-opacity="1" stroke-width="2" d=" M0.4976379871368408,-16 C1.824629545211792,-14.666999816894531 2.488189935684204,-12 2.488189935684204,-8 C2.488189935684204,-2 -2.488189935684204,2.6670000553131104 -2.488189935684204,8 C-2.488189935684204,11.555999755859375 -1.4929139614105225,14.222000122070312 0.4976379871368408,16"></path></g></g><g transform="matrix(2,0,0,2,109.75,111.75)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="4" stroke="rgb(96,216,179)" stroke-opacity="1" stroke-width="2" d=" M-2.488189935684204,8 C-2.488189935684204,11.555999755859375 -1.4929139614105225,14.222000122070312 0.4976379871368408,16"></path></g></g></g></svg>
                                             </div>
                                             <div class="step-label">
-                                                <p class="big">Preparalo en un microondas</p>
+                                                <p class="big">Preparálo en un microondas</p>
                                                 <p class="small">Listo en 5 minutos</p>
                                             </div>
                                         </div>
@@ -1421,7 +1424,7 @@
                                         </div>
                                         <div class="fresh-three-col-content">
                                             <h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;" class="">Ingredientes frescos, nunca congelados</font></font></h3>
-                                            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Solo utilizamos ingredientes frescos de nuestra red de socios de confianza. </font><font style="vertical-align: inherit;">Las comidas de factor están libres de hormonas, antibióticos, gluten, azúcares refinados y OGM.</font></font></p>
+                                            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Disfrute de productos orgánicos e ingredientes limpios y frescos.  </font><font style="vertical-align: inherit;">Las comidas de Nutrifood están libres de hormonas, antibióticos, gluten. azúcares refinados.</font></font></p>
                                         </div>
                                     </div>
 
@@ -1431,7 +1434,7 @@
                                         </div>
                                         <div class="fresh-three-col-content">
                                             <h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Recetas elaboradas por chefs</font></font></h3>
-                                            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nuestro equipo de expertos culinarios elabora comidas tan deliciosas que no creerá que son saludables.</font></font></p>
+                                            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Comidas elabodaras por expertos culinarios y aprobadas por dietistas.</font></font></p>
                                         </div>
                                     </div>
 
@@ -1440,8 +1443,8 @@
                                             <img src="./Factor_ _ Comidas saludables y completamente preparadas entregadas en su puerta_files/tick-icon.svg">
                                         </div>
                                         <div class="fresh-three-col-content">
-                                            <h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Diseñado por Dietistas</font></font></h3>
-                                            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nuestros dietistas registrados trabajan mano a mano con nuestra cocina para garantizar que cada comida esté repleta de una calidad nutricional de primera calidad respaldada por la ciencia.</font></font></p>
+                                            <h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Conveniente envío de comidas</font></font></h3>
+                                            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nuevas comidas saludables frescas y preparadas entregadas en la puerta de su hogar u oficina. Y están listas en minutos.</font></font></p>
                                         </div>
                                     </div>
 
@@ -1897,7 +1900,7 @@
                         <div class="page-center" style="background:white">
                             <div class="accordion-outer" style="background:white">
                                 <div class="accordion-title">
-                                    <h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">preguntas frecuentes</font></font></h2>
+                                    <h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Preguntas frecuentes</font></font></h2>
                                 </div>
                                 <div class="accordion-panel-left-right">
                                     <div class="accordion-panel-left">
@@ -2016,7 +2019,29 @@
 </div><!--end footer wrapper -->
 
 
+<script>
+    var firebaseConfig = {
+        apiKey: "AIzaSyD2NwteilkPKKk6Jb8QPNKBJq7epZYqJr4",
+        authDomain: "nutrifood-b5bd9.firebaseapp.com",
+        databaseURL: "https://nutrifood-b5bd9.firebaseio.com",
+        projectId: "nutrifood-b5bd9",
+        storageBucket: "nutrifood-b5bd9.appspot.com",
+        messagingSenderId: "713471611814",
+        appId: "1:713471611814:web:fd25f0a7d3b1009f5af567",
+        measurementId: "G-HYR27HG7FL"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    var db=firebase.firestore();
 
+    let form=document.querySelector(".subscription-form");
+    form.addEventListener("submit",function(e){
+        let nombre=form.nombre.value;
+        let email=form.email.value;
+        db.collection("suscripciones").add({email:email,nombre:nombre});
+    })
+
+</script>
 
 
 

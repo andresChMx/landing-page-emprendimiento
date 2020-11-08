@@ -21,7 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1a6befdb-41c0-4a19-878d-f68e6401d9d2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Factor_ _ Comidas saludables y completamente preparadas entregadas en su puerta_files/custom/customStyles.css" beforeDir="false" afterPath="$PROJECT_DIR$/Factor_ _ Comidas saludables y completamente preparadas entregadas en su puerta_files/custom/customStyles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +46,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../doodly-clone" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -71,6 +71,8 @@
       <workItem from="1604750674825" duration="958000" />
       <workItem from="1604775869683" duration="5141000" />
       <workItem from="1604796943952" duration="13972000" />
+      <workItem from="1604818498241" duration="90000" />
+      <workItem from="1604855063985" duration="3272000" />
     </task>
     <servers />
   </component>
@@ -90,10 +92,14 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="739" y="277" key="FileChooserDialogImpl" timestamp="1604775926720">
+    <state x="739" y="277" key="FileChooserDialogImpl" timestamp="1604818585772">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="739" y="277" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1604775926720" />
+    <state x="739" y="277" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1604818585772" />
+    <state x="565" y="133" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1604857666942">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="565" y="133" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1604857666942" />
     <state x="616" y="237" key="run.anything.popup" timestamp="1604809840460">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
